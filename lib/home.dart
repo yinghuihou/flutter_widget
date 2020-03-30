@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/city_select/city_select_custom_header.dart';
+import 'package:flutter_widget/dialog/dialog_demo.dart';
+import 'package:flutter_widget/dialog/jt_common_dialog.dart';
 import 'package:flutter_widget/image_view/image_widget_demo.dart';
 import 'package:flutter_widget/picker/picker_widget_demo.dart';
 import 'package:flutter_widget/popup_menu/menu_demo.dart';
@@ -32,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
               buildItem("popup_menu", MenuDemo()),
               buildItem("pick_widget", DateAndTimePickerDemo()),
               buildItem("share", ShareDemo()),
+              buildItem("dialog", DialogWidgetDemo()),
             ],
           ),
         ));

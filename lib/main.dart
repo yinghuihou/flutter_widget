@@ -3,6 +3,7 @@ import 'package:flutter_widget/home.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  debugProfileBuildsEnabled=true;
   runApp(MyApp());
 }
 
