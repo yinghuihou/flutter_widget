@@ -1,16 +1,12 @@
 # flutter_widget
 
-A Flutter Widget Collection
+一个收集整理的flutter常用的widget集合，部分资源为网上收集
 
-## Getting Started
+## 目录
+- city_select：城市选择控件
+- image_widget:自己封装的图片加载控件
+- swiper轮播图控件
+- popup_menu:抽屉菜单
+- pick_widget：时间和日期选择控件
+- share：分享面板
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
