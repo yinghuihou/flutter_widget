@@ -43,7 +43,6 @@ class DialogWidgetDemo extends StatelessWidget {
                             contentWidget: ScrollConfiguration(
                               behavior: JTScrollBehavior(),
                               child: ListView.builder(
-
                                 itemBuilder:
                                     (BuildContext context, int position) {
                                   return Padding(

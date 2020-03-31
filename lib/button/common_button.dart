@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/res/jtcolors.dart';
+
 /// 通用按钮
 ///
 /// 实现了水波纹效果，可设置圆角，填充，高亮等效果。
@@ -36,6 +37,8 @@ class CommonButton extends StatelessWidget {
   final bool isBottom;
   final Color splashColor;
   final bool isGradient;
+  final EdgeInsetsGeometry margin;
+
   CommonButton({
     Key key,
     @required this.buttonText,
@@ -54,23 +57,22 @@ class CommonButton extends StatelessWidget {
     this.isBottom = false,
     this.splashColor,
     this.isGradient = true,
+    this.margin,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
       height: height,
       width: width,
+      margin: margin,
       decoration: isBottom
           ? BoxDecoration(color: JTColors.white, boxShadow: [
               BoxShadow(color: JTColors.main_shadow, blurRadius: 2)
             ])
           : BoxDecoration(),
       padding: isBottom
-          ? EdgeInsets.only(
-              top: 10,
-              bottom: 10,
-              left: 16,
-              right: 16)
+          ? EdgeInsets.only(top: 10, bottom: 10, left: 16, right: 16)
           : EdgeInsets.zero,
       alignment: Alignment.center,
       child: Material(
