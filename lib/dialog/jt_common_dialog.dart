@@ -197,40 +197,42 @@ class JTCommonDialog {
               Flexible(
                 child: Padding(padding: contentPadding, child: contentWidget),
               ),
-              ButtonTheme(
-                child: ButtonBar(
-                  children: <Widget>[
-                    cancelText != null
-                        ? FlatButton(
-                            child: Text(
-                              cancelText,
-                              style: cancelTextStyle != null
-                                  ? cancelTextStyle
-                                  : TextStyle(
-                                      color: Colors.black, fontSize: 14),
-                            ),
-                            onPressed: () {
-                              cancel(context);
-                            },
-                          )
-                        : null,
-                    confirmText != null
-                        ? FlatButton(
-                            child: Text(
-                              confirmText,
-                              style: confirmTextStyle != null
-                                  ? confirmTextStyle
-                                  : TextStyle(
-                                      color: Colors.black, fontSize: 14),
-                            ),
-                            onPressed: () {
-                              confirm(context);
-                            },
-                          )
-                        : null,
-                  ],
-                ),
-              )
+              cancelText == null && confirmText == null
+                  ? SizedBox()
+                  : ButtonTheme(
+                      child: ButtonBar(
+                        children: <Widget>[
+                          cancelText != null
+                              ? FlatButton(
+                                  child: Text(
+                                    cancelText,
+                                    style: cancelTextStyle != null
+                                        ? cancelTextStyle
+                                        : TextStyle(
+                                            color: Colors.black, fontSize: 14),
+                                  ),
+                                  onPressed: () {
+                                    cancel(context);
+                                  },
+                                )
+                              : null,
+                          confirmText != null
+                              ? FlatButton(
+                                  child: Text(
+                                    confirmText,
+                                    style: confirmTextStyle != null
+                                        ? confirmTextStyle
+                                        : TextStyle(
+                                            color: Colors.black, fontSize: 14),
+                                  ),
+                                  onPressed: () {
+                                    confirm(context);
+                                  },
+                                )
+                              : null,
+                        ],
+                      ),
+                    )
             ],
           ),
         ),
