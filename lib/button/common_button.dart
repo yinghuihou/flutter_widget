@@ -37,7 +37,7 @@ class CommonButton extends StatelessWidget {
   final bool isBottom;
   final Color splashColor;
   final bool isGradient;
-  final EdgeInsetsGeometry margin;
+  final EdgeInsetsGeometry margin;//自定义间距
 
   CommonButton({
     Key key,
